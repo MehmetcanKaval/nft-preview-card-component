@@ -1,0 +1,109 @@
+*{
+    font-family: 'Outfit', sans-serif; 
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: hsl(217, 54%, 11%);
+}
+
+.card{
+    background: rgb(20, 37, 61);
+    border-radius: 15px;
+    width: 21.25rem;
+    padding:1.4em;
+}
+.image-top{
+    position: relative;
+    width: 21.25rem;
+    height: 21.25rem;
+    border-radius: 0.6rem;
+}
+ .card .img-container{
+    position: relative;
+    width: 21.25rem;
+    height: 21.25rem;
+    border-radius: 0.6rem;
+    z-index: 2;
+
+} 
+.img-container div{
+    position: absolute;
+    width: 21.25rem;
+    height: 21.25rem;
+    border-radius: 0.6rem;
+    top: 0;
+    z-index: 3;
+    transition: 0.3 ease-in-out;
+}
+.img-container div:hover{
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%,0.3);
+}
+h4{
+    color:#fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0.6rem auto;
+}
+h4:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+p{
+    font-size: 1.12rem;
+    color:gray;
+     
+}
+.span-container{
+    display: flex;
+    justify-content: space-between;
+}
+.eth{
+    color:hsl(178, 100%, 50%);
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.eth img{
+    margin-right: 0.25rem;
+    width: 0.6rem;
+}
+small{
+    color:lightgray;
+   
+}
+small img{
+    margin:0 .3rem -.20rem 0;
+}
+hr{
+    border-color: hsl(215, 32%, 27%);
+}
+.avatar-conteiner{
+    display: flex;
+}
+.avatar{
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 0.3rem 0.3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.avatar-text{
+    font-size: small;
+    display: inline;
+    letter-spacing: 1px;
+}
+.avatar-text span{
+    color:hsl(215, 51%, 70%);
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    html{
+        font-size:10px;
+    }
+    .avatar{
+        margin: 1.2rem 0.5rem;
+    }
+  }
